@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block page %}
+  <header id="main_nav">
+    <nav>
+      <ul id="top_nav" class="clearfix">
+        <li><a href="{{ url_for('chicagoclimateonline.index') }}">Chicago Climate Online</a></li>
+        <li><a href="/glossary">Glossary</a></li>
+        <li><a href="/documentation">Documentation</a></li>
+        <li><ul id="left_nav">
+          {% block left_nav %}
+            <li><a href>Topical Outline</a></li>
+            <li><a href>Web resources</a></li>
+            <li><a href>Advanced search</a></li>
+          {% endblock %}
+        </ul></li>
+      </ul>
+    </nav>
+    <div id="title_search_wrap">
+      <input id="main_search" name="main_search" type="text" placeholder="Search C2O">
+    </div>
+  </header>
+  <article id="main_content">
+  {% block content %}
+    {% block header %}
+      <section>
+        <header>
+          <h1>{{ title|replace('_', ' ')|title }}</h1>
+        </header>
+      </section>
+    {% endblock %}
+  {% endblock %}
+  </article>
+  <script>
+    Options = window.Options || {};
+  </script>
+  {% block bodyjs %}
+    <script src="{{ url_for('static', filename='js/vendor/d3.v3.min.js') }}"></script>
+  <script>
+  {% endblock %}
+{% endblock %}
