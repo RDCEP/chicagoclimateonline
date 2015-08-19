@@ -13,3 +13,7 @@ itsdangerous==0.24
 smartypants==1.8.6
 webassets==0.10.1
 wsgiref==0.1.2
+SQLAlchemy-Searchable
+cssmin
+pyzotero
+slugify
