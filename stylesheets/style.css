@@ -1,0 +1,269 @@
+/* line 10, ../scss/style.scss */
+body {
+  margin-top: 3em;
+  background-color: #f6f6f6;
+  color: #576889;
+  font-family: "proxima-nova", sans-serif normal 300;
+  font-size: 1.25em;
+}
+
+/* =============== LINKS =============== */
+/* line 18, ../scss/style.scss */
+a {
+  color: #576889;
+}
+
+/* line 22, ../scss/style.scss */
+a:hover {
+  color: #3a435a;
+}
+
+/* line 26, ../scss/style.scss */
+nav a {
+  font-size: .9em;
+}
+
+/* line 30, ../scss/style.scss */
+.introsummary {
+  width: 70%;
+}
+
+/* line 35, ../scss/style.scss */
+h1 {
+  font-family: "garamond-premier-pro", serif;
+  color: #576889;
+  font-size: 3em;
+  letter-spacing: .03em;
+}
+
+/* line 42, ../scss/style.scss */
+h2 {
+  font-family: "proxima-nova", sans-serif normal 300;
+  font-weight: 100;
+  color: #576889;
+  letter-spacing: .03em;
+}
+
+/* line 49, ../scss/style.scss */
+h3 {
+  font-family: "proxima-nova", sans-serif normal 300;
+  color: #576889;
+  font-size: 1em;
+  margin: 1em 0 0.5em 0;
+  font-weight: 200;
+  position: relative;
+  line-height: 40px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(53, 86, 129, 0.3);
+}
+
+/* line 62, ../scss/style.scss */
+header h2 {
+  font-size: 1.3em;
+  margin-top: -.5em;
+}
+
+/* =============== TOPIC PAGE =============== */
+/* line 70, ../scss/style.scss */
+.topicoutline {
+  font-size: .7em;
+  color: gray;
+}
+
+/* line 75, ../scss/style.scss */
+.topiclink,
+.topiclink:hover {
+  display: inline-block;
+  width: 100%;
+  background-color: #576889;
+  padding: .9em;
+  border-radius: 5px;
+  color: #f6f6f6;
+  margin-bottom: 1em;
+  letter-spacing: .08em;
+}
+
+/* =============== TOPIC OUTLINE =============== */
+/* line 93, ../scss/style.scss */
+lh {
+  text-transform: uppercase;
+  background-color: #576889;
+  color: #f6f6f6;
+  width: 100%;
+  padding: .3em .3em .3em 2em;
+  margin: .4em;
+  display: inline-block;
+  border-radius: .5em;
+}
+
+/* line 107, ../scss/style.scss */
+#searchpanel {
+  display: none;
+  width: 350px;
+  padding: 2em;
+  position: fixed;
+  z-index: 1000;
+  box-shadow: 0px 5px 2px #888888;
+  background-color: #f6f6f6;
+}
+
+/* line 117, ../scss/style.scss */
+#searchpanel a {
+  font-size: 1em;
+}
+
+/* line 121, ../scss/style.scss */
+header img:hover + #searchpanel {
+  display: block;
+}
+
+/* line 126, ../scss/style.scss */
+h4 {
+  font-family: "proxima-nova", sans-serif normal 300;
+  font-weight: 100;
+}
+
+/* line 131, ../scss/style.scss */
+.citation p {
+  font-family: "garamond-premier-pro", serif;
+}
+
+/* line 135, ../scss/style.scss */
+.content p {
+  font-size: .8em;
+  color: darkslategray;
+}
+
+/* line 141, ../scss/style.scss */
+.list {
+  float: left;
+}
+
+/* line 145, ../scss/style.scss */
+ul li {
+  list-style-type: none;
+}
+
+/*SEARCH BAR */
+/* line 151, ../scss/style.scss */
+input {
+  background-color: gray;
+  width: 80%;
+  -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 0 10px 0;
+  font-size: 1.5em;
+  font-weight: 100;
+  /*background:  url(../img/search_icon.png) no-repeat right;*/
+  padding-left: 40px;
+  background-position: right 20px bottom 10px;
+}
+
+/* line 167, ../scss/style.scss */
+.searchicon {
+  position: absolute;
+  float: left;
+  padding: 18.8px;
+  background-color: #576889;
+}
+
+/* line 174, ../scss/style.scss */
+#search {
+  padding-left: 0px;
+  float: left;
+}
+
+/* line 179, ../scss/style.scss */
+::-webkit-input-placeholder {
+  color: #576889;
+  font-weight: 100;
+}
+
+/* line 184, ../scss/style.scss */
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #576889;
+}
+
+/* line 188, ../scss/style.scss */
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #576889;
+}
+
+/* line 192, ../scss/style.scss */
+:-ms-input-placeholder {
+  color: #576889;
+}
+
+/* line 196, ../scss/style.scss */
+footer {
+  background-color: #576889;
+  height: 250px;
+  margin-top: 3em;
+  padding: 2em;
+}
+
+/* line 203, ../scss/style.scss */
+footer p {
+  color: #f6f6f6;
+  font-size: .6em;
+  letter-spacing: .06em;
+}
+
+/* line 209, ../scss/style.scss */
+footer a {
+  color: #f6f6f6;
+}
+
+/* line 213, ../scss/style.scss */
+footer a:hover {
+  color: #fdfdfd;
+}
+
+/* MENU */
+/* Minimal css for clickable pure CSS collapsible tree menu */
+/* As specific as possible to prevent interference with other code */
+/* line 224, ../scss/style.scss */
+#menutree li {
+  list-style: none;
+  /* all list item li dots invisible */
+}
+
+/* line 228, ../scss/style.scss */
+li .menu_label + input[type=checkbox] {
+  opacity: 0;
+  /* checkboxes invisible and use no space */
+}
+
+/* display: none; is better but fails in ie8 */
+/* line 232, ../scss/style.scss */
+li .menu_label {
+  cursor: pointer;
+  /* cursor changes when you mouse over this class */
+}
+
+/* could add the many user-select: none; commands here */
+/* line 236, ../scss/style.scss */
+li .menu_label + input[type=checkbox] + ol > li {
+  display: none;
+  /* prevents sublists below unchecked labels from displaying */
+}
+
+/* line 241, ../scss/style.scss */
+li .menu_label + input[type=checkbox]:checked + ol > li {
+  display: block;
+  /* display submenu on click */
+}
+
+/* ================== ALTERNATE EXPANDING LIST ================== */
+/* line 253, ../scss/style.scss */
+.topiclist ul li:focus ~ .alert {
+  display: none;
+}
+
+/* line 256, ../scss/style.scss */
+.span2:focus ~ .alert {
+  display: block;
+}

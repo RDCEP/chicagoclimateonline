@@ -1,0 +1,165 @@
+body {
+  margin-top: 3em;
+  background-color: #f6f6f6;
+  color: #576889;
+  font-family: "proxima-nova", sans-serif normal 300;
+  font-size: 1.25em; }
+
+/* LINKS */
+a {
+  color: #576889; }
+
+a:hover {
+  color: #3a435a; }
+
+nav a {
+  font-size: .9em; }
+
+.introsummary {
+  width: 70%; }
+
+h1 {
+  font-family: "garamond-premier-pro", serif;
+  color: #576889;
+  font-size: 3em;
+  letter-spacing: .03em; }
+
+h2 {
+  font-family: "proxima-nova", sans-serif normal 300;
+  font-weight: 100;
+  color: #576889;
+  letter-spacing: .03em; }
+
+h3 {
+  font-family: "proxima-nova", sans-serif normal 300;
+  color: #576889;
+  font-size: 1em;
+  margin: 1em 0 0.5em 0;
+  font-weight: 200;
+  position: relative;
+  line-height: 40px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(53, 86, 129, 0.3); }
+
+header h2 {
+  font-size: 1.3em;
+  margin-top: -.5em; }
+
+.topicoutline {
+  font-size: .7em;
+  color: gray; }
+
+#searchpanel {
+  display: none;
+  width: 350px;
+  padding: 2em;
+  position: fixed;
+  z-index: 1000;
+  box-shadow: 0px 5px 2px #888888;
+  background-color: #f6f6f6; }
+
+#searchpanel a {
+  font-size: 1em; }
+
+header img:hover + #searchpanel {
+  display: block; }
+
+h4 {
+  font-family: "proxima-nova", sans-serif normal 300;
+  font-weight: 100; }
+
+.citation p {
+  font-family: "garamond-premier-pro", serif; }
+
+.content p {
+  font-size: .8em;
+  color: darkslategray; }
+
+.list {
+  float: left; }
+
+ul li {
+  list-style-type: none; }
+
+/*SEARCH BAR */
+input {
+  background-color: gray;
+  width: 80%;
+  -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 0 10px 0;
+  font-size: 1.5em;
+  font-weight: 100;
+  /*background:  url(../img/search_icon.png) no-repeat right;*/
+  padding-left: 40px;
+  background-position: right 20px bottom 10px; }
+
+.searchicon {
+  position: absolute;
+  float: left;
+  padding: 18.8px;
+  background-color: #576889; }
+
+#search {
+  padding-left: 0px;
+  float: left; }
+
+::-webkit-input-placeholder {
+  color: #576889;
+  font-weight: 100; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #576889; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #576889; }
+
+:-ms-input-placeholder {
+  color: #576889; }
+
+footer {
+  background-color: #576889;
+  height: 250px;
+  margin-top: 3em;
+  padding: 2em; }
+
+footer p {
+  color: #f6f6f6;
+  font-size: .6em;
+  letter-spacing: .06em; }
+
+footer a {
+  color: #f6f6f6; }
+
+footer a:hover {
+  color: #fdfdfd; }
+
+/* MENU */
+/* Minimal css for clickable pure CSS collapsible tree menu */
+/* As specific as possible to prevent interference with other code */
+#menutree li {
+  list-style: none;
+  /* all list item li dots invisible */ }
+
+li .menu_label + input[type=checkbox] {
+  opacity: 0;
+  /* checkboxes invisible and use no space */ }
+
+/* display: none; is better but fails in ie8 */
+li .menu_label {
+  cursor: pointer;
+  /* cursor changes when you mouse over this class */ }
+
+/* could add the many user-select: none; commands here */
+li .menu_label + input[type=checkbox] + ol > li {
+  display: none;
+  /* prevents sublists below unchecked labels from displaying */ }
+
+li .menu_label + input[type=checkbox]:checked + ol > li {
+  display: block;
+  /* display submenu on click */ }
+
+/*# sourceMappingURL=style.css.map */
