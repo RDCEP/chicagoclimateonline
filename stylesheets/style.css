@@ -1,81 +1,140 @@
-/* line 10, ../scss/style.scss */
+/* line 11, ../scss/style.scss */
 body {
   margin-top: 3em;
-  background-color: #f6f6f6;
-  color: #576889;
+  background-color: #fcfcfc;
+  color: #0F425C;
   font-family: "proxima-nova", sans-serif normal 300;
   font-size: 1.25em;
+  height: 100%;
 }
 
 /* =============== LINKS =============== */
-/* line 18, ../scss/style.scss */
+/* line 20, ../scss/style.scss */
 a {
-  color: #576889;
+  color: #0F425C;
 }
 
-/* line 22, ../scss/style.scss */
+/* line 24, ../scss/style.scss */
 a:hover {
   color: #3a435a;
 }
 
-/* line 26, ../scss/style.scss */
+/* line 28, ../scss/style.scss */
 nav a {
   font-size: .9em;
 }
 
-/* line 30, ../scss/style.scss */
+/* line 32, ../scss/style.scss */
 .introsummary {
   width: 70%;
 }
 
-/* line 35, ../scss/style.scss */
-h1 {
-  font-family: "garamond-premier-pro", serif;
-  color: #576889;
-  font-size: 3.0em;
-  letter-spacing: .03em;
-}
-
-/* line 42, ../scss/style.scss */
-h2 {
-  font-family: "proxima-nova", sans-serif normal 300;
-  font-weight: 100;
-  color: #576889;
-  letter-spacing: .03em;
+/* =============== HEADER =============== */
+/* line 38, ../scss/style.scss */
+header {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid #0F425C;
+  height: auto;
+  padding-left: 2em;
+  position: relative;
+  top: -50px;
 }
 
 /* line 49, ../scss/style.scss */
+header p {
+  max-width: 60%;
+  margin-top: -.8em;
+}
+
+/* line 55, ../scss/style.scss */
+header h1 {
+  color: #0F425C;
+  font-size: 2.5em;
+  letter-spacing: .5px;
+}
+
+/* line 61, ../scss/style.scss */
+#headersearch {
+  width: 200px;
+  position: absolute;
+  top: 70px;
+  right: 0px;
+}
+
+/* line 69, ../scss/style.scss */
+h2 {
+  font-family: "proxima-nova", sans-serif normal 300;
+  font-weight: 100;
+  color: #0F425C;
+  letter-spacing: .03em;
+}
+
+/* line 76, ../scss/style.scss */
 h3 {
   font-family: "proxima-nova", sans-serif normal 300;
-  color: #576889;
-  font-size: 1em;
+  color: #0F425C;
+  font-size: .8em;
   margin: 1em 0 0.5em 0;
   font-weight: 200;
   position: relative;
   line-height: 40px;
   text-transform: uppercase;
   border-bottom: 1px solid rgba(53, 86, 129, 0.3);
+  letter-spacing: .09em;
 }
 
-/* line 62, ../scss/style.scss */
+/* line 91, ../scss/style.scss */
 header h2 {
   font-size: 1.3em;
   margin-top: -.5em;
 }
 
+/* =============== MENU =============== */
+/* line 106, ../scss/style.scss */
+nav ol li, nav ul li {
+  line-height: 1.3em;
+  margin-bottom: .4em;
+}
+
+/* line 111, ../scss/style.scss */
+nav ul li a {
+  border-bottom: 0px solid #000;
+  padding-bottom: 0px;
+}
+
+/* =============== HOME PAGE =============== */
+/* line 119, ../scss/style.scss */
+.homepage {
+  position: relative;
+  top: -40px;
+}
+
+/* line 125, ../scss/style.scss */
+ol li, ul li {
+  line-height: 1.3em;
+  margin-bottom: .7em;
+}
+
+/* line 131, ../scss/style.scss */
+ul li a:nth-child(2) {
+  padding-bottom: 2.9px;
+  color: #166188;
+}
+
 /* =============== TOPIC PAGE =============== */
-/* line 70, ../scss/style.scss */
+/* line 144, ../scss/style.scss */
 .topicoutline {
   font-size: .7em;
   color: gray;
 }
 
-/* line 75, ../scss/style.scss */
+/* line 149, ../scss/style.scss */
 .topiclink,
 .topiclink:hover {
   display: inline-block;
   width: 100%;
-  background-color: #576889;
+  background-color: #0F425C;
   padding: .9em;
   border-radius: 5px;
   color: #f6f6f6;
@@ -83,11 +142,36 @@ header h2 {
   letter-spacing: .08em;
 }
 
+/* line 161, ../scss/style.scss */
+.breadcrumbs {
+  border-style: none;
+  border-bottom: solid 1px #0F425C;
+  border-width: 1px;
+  display: block;
+  list-style: none;
+  margin-left: 0;
+  overflow: hidden;
+  padding: 0.5625rem 0.875rem 0.5625rem;
+  border-radius: 0px;
+  background-color: transparent;
+}
+
+/* line 174, ../scss/style.scss */
+.breadcrumbs li, .breadcrumbs a {
+  letter-spacing: .1em;
+  color: #0F425C;
+}
+
+/* line 181, ../scss/style.scss */
+.accordion .accordion-navigation, .accordion dd {
+  margin-bottom: 1em !important;
+}
+
 /* =============== TOPIC OUTLINE =============== */
-/* line 93, ../scss/style.scss */
+/* line 191, ../scss/style.scss */
 lh {
   text-transform: uppercase;
-  background-color: #576889;
+  background-color: #0F425C;
   color: #f6f6f6;
   width: 100%;
   padding: .3em .3em .3em 2em;
@@ -96,7 +180,7 @@ lh {
   border-radius: .5em;
 }
 
-/* line 107, ../scss/style.scss */
+/* line 205, ../scss/style.scss */
 #searchpanel {
   display: none;
   width: 350px;
@@ -104,48 +188,61 @@ lh {
   position: fixed;
   z-index: 1000;
   box-shadow: 0px 5px 2px #888888;
-  background-color: #f6f6f6;
+  background-color: #fcfcfc;
 }
 
-/* line 117, ../scss/style.scss */
+/* line 215, ../scss/style.scss */
 #searchpanel a {
   font-size: 1em;
 }
 
-/* line 121, ../scss/style.scss */
+/* line 219, ../scss/style.scss */
 header img:hover + #searchpanel {
   display: block;
 }
 
-/* line 126, ../scss/style.scss */
+/* line 224, ../scss/style.scss */
 h4 {
   font-family: "proxima-nova", sans-serif normal 300;
   font-weight: 100;
 }
 
-/* line 131, ../scss/style.scss */
-.citation p {
-  font-family: "garamond-premier-pro", serif;
+/* line 229, ../scss/style.scss */
+.citation {
+  height: 100%;
+  padding: 1.25em;
 }
 
-/* line 135, ../scss/style.scss */
-.content p {
+/* line 234, ../scss/style.scss */
+.citation p:nth-child(odd) {
+  background: #f6f6f6;
+}
+
+/* line 238, ../scss/style.scss */
+.citation p {
+  font-family: "proxima-nova", sans-serif normal 300;
   font-size: .8em;
+  margin-top: -1em;
+}
+
+/* line 244, ../scss/style.scss */
+.content p {
+  font-size: 1em;
   color: darkslategray;
 }
 
-/* line 141, ../scss/style.scss */
+/* line 250, ../scss/style.scss */
 .list {
   float: left;
 }
 
-/* line 145, ../scss/style.scss */
+/* line 254, ../scss/style.scss */
 ul li {
   list-style-type: none;
 }
 
 /*SEARCH BAR */
-/* line 151, ../scss/style.scss */
+/* line 260, ../scss/style.scss */
 input {
   background-color: gray;
   width: 80%;
@@ -154,13 +251,12 @@ input {
   background: rgba(255, 255, 255, 0.5);
   margin: 0 0 10px 0;
   font-size: 1.5em;
-  font-weight: 100;
   /*background:  url(../img/search_icon.png) no-repeat right;*/
   padding-left: 40px;
   background-position: right 20px bottom 10px;
 }
 
-/* line 167, ../scss/style.scss */
+/* line 275, ../scss/style.scss */
 .searchicon {
   position: absolute;
   float: left;
@@ -168,102 +264,123 @@ input {
   background-color: #576889;
 }
 
-/* line 174, ../scss/style.scss */
+/* line 282, ../scss/style.scss */
 #search {
   padding-left: 0px;
   float: left;
 }
 
-/* line 179, ../scss/style.scss */
+/* line 287, ../scss/style.scss */
 ::-webkit-input-placeholder {
-  color: #576889;
+  color: #0F425C;
   font-weight: 100;
 }
 
-/* line 184, ../scss/style.scss */
+/* line 292, ../scss/style.scss */
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #576889;
+  color: #0F425C;
 }
 
-/* line 188, ../scss/style.scss */
+/* line 296, ../scss/style.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #576889;
+  color: #0F425C;
 }
 
-/* line 192, ../scss/style.scss */
+/* line 300, ../scss/style.scss */
 :-ms-input-placeholder {
-  color: #576889;
+  color: #0F425C;
 }
 
-/* line 196, ../scss/style.scss */
+/* =============== TFOOTER =============== */
+/* line 307, ../scss/style.scss */
 footer {
-  background-color: #576889;
-  height: 250px;
+  background-color: #fcfcfc;
+  height: auto;
   margin-top: 3em;
   padding: 2em;
+  color: #0F425C;
 }
 
-/* line 203, ../scss/style.scss */
+/* line 316, ../scss/style.scss */
+footer img {
+  height: 30px;
+  margin-bottom: 1em;
+}
+
+/* line 321, ../scss/style.scss */
 footer p {
-  color: #f6f6f6;
   font-size: .6em;
   letter-spacing: .06em;
 }
 
-/* line 209, ../scss/style.scss */
+/* line 326, ../scss/style.scss */
 footer a {
-  color: #f6f6f6;
+  color: #0F425C;
 }
 
-/* line 213, ../scss/style.scss */
+/* line 330, ../scss/style.scss */
 footer a:hover {
   color: #fdfdfd;
+}
+/* line 331, ../scss/style.scss */
+footer a:hover footer div:first-child, footer a:hover footer div:first-child + div {
+  list-style: none;
+  color: red;
+}
+
+/* line 340, ../scss/style.scss */
+footer h1 {
+  font-size: 1em;
+  color: #f6f6f6;
+  letter-spacing: .05em;
+  height: 30px;
+  margin-bottom: 1em;
 }
 
 /* MENU */
 /* Minimal css for clickable pure CSS collapsible tree menu */
 /* As specific as possible to prevent interference with other code */
-/* line 224, ../scss/style.scss */
+/* line 354, ../scss/style.scss */
 #menutree li {
   list-style: none;
   /* all list item li dots invisible */
 }
 
-/* line 228, ../scss/style.scss */
+/* line 358, ../scss/style.scss */
 li .menu_label + input[type=checkbox] {
   opacity: 0;
   /* checkboxes invisible and use no space */
 }
 
 /* display: none; is better but fails in ie8 */
-/* line 232, ../scss/style.scss */
+/* line 362, ../scss/style.scss */
 li .menu_label {
   cursor: pointer;
   /* cursor changes when you mouse over this class */
 }
 
 /* could add the many user-select: none; commands here */
-/* line 236, ../scss/style.scss */
+/* line 366, ../scss/style.scss */
 li .menu_label + input[type=checkbox] + ol > li {
   display: none;
   /* prevents sublists below unchecked labels from displaying */
 }
 
-/* line 241, ../scss/style.scss */
+/* line 371, ../scss/style.scss */
 li .menu_label + input[type=checkbox]:checked + ol > li {
   display: block;
   /* display submenu on click */
 }
 
 /* ================== ALTERNATE EXPANDING LIST ================== */
-/* line 253, ../scss/style.scss */
+/* line 383, ../scss/style.scss */
 .topiclist ul li:focus ~ .alert {
   display: none;
 }
 
-/* line 256, ../scss/style.scss */
+/* line 386, ../scss/style.scss */
 .span2:focus ~ .alert {
   display: block;
 }

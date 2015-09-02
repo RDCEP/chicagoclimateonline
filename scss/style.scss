@@ -1,10 +1,11 @@
-$backgroundc: #f6f6f6;
+@import "../bourbon/_bourbon.scss";
+
+$backgroundc: #fcfcfc;
 $lightcolor: #f6f6f6;
-$maincolor: #576889;
+$maincolor: #0F425C;
 $serif: "garamond-premier-pro",serif;
 $sansserif:"proxima-nova",sans-serif normal 300;
 $sansserifweight:100;
-$footercolor:#576889;
 
 
 body {
@@ -13,6 +14,7 @@ body {
   color:$maincolor;
   font-family: $sansserif;
   font-size:1.25em;
+  height:100%;
 }
 /* =============== LINKS =============== */
 a {
@@ -31,12 +33,37 @@ nav a {
   width:70%;
 }
 
+/* =============== HEADER =============== */
 
-h1 {
-  font-family:$serif;
+header {
+  width:80%;
+  margin: 0 auto;
+  border-bottom: 1px solid $maincolor;
+  height:auto;
+  padding-left: 2em;
+  position: relative;
+  top:-50px;
+
+}
+
+header p {
+  max-width: 60%;
+  margin-top: -.8em;
+}
+
+
+header h1 {
   color:$maincolor;
-  font-size:3.0em;
-  letter-spacing:.03em;
+  font-size:2.5em;
+  letter-spacing:.5px;
+}
+
+#headersearch {
+  width:200px;
+  position: absolute;
+  top:70px;
+  right:0px;
+
 }
 
 h2 {
@@ -49,20 +76,67 @@ h2 {
 h3 {
   font-family:$sansserif;
   color:$maincolor;
-  font-size:1em;
+  font-size:.8em;
   margin: 1em 0 0.5em 0;
   font-weight: 200;
   position: relative;
   line-height: 40px;
   text-transform: uppercase;
   border-bottom: 1px solid rgba(53,86,129, 0.3);
+  letter-spacing: .09em;
   ;
 }
+
 
 header h2 {
   font-size:1.3em;
   margin-top: -.5em;
 }
+
+
+
+/* =============== MENU =============== */
+
+
+nav {
+
+}
+
+
+nav ol li, nav ul li {
+  line-height: 1.3em;
+  margin-bottom: .4em;
+}
+
+nav ul li a {
+  border-bottom: 0px solid #000;
+  padding-bottom: 0px
+}
+
+
+/* =============== HOME PAGE =============== */
+
+.homepage {
+  position:relative;
+  top:-40px;
+}
+
+
+ol li, ul li {
+  line-height: 1.3em;
+  margin-bottom: .7em;
+}
+
+
+ul li a:nth-child(2) {
+  padding-bottom: 2.9px;
+  color: lighten( $maincolor, 10% );
+
+}
+
+
+
+
 
 /* =============== TOPIC PAGE =============== */
 
@@ -82,6 +156,30 @@ header h2 {
   color:$lightcolor;
   margin-bottom: 1em;
   letter-spacing: .08em;
+}
+
+.breadcrumbs {
+  border-style: none;
+  border-bottom: solid 1px $maincolor;
+  border-width: 1px;
+  display: block;
+  list-style: none;
+  margin-left: 0;
+  overflow: hidden;
+  padding: 0.5625rem 0.875rem 0.5625rem;
+  border-radius: 0px;
+  background-color: transparent;
+}
+
+.breadcrumbs li, .breadcrumbs a {
+  letter-spacing: .1em;
+  color:$maincolor;
+
+}
+
+
+.accordion .accordion-navigation, .accordion dd {
+  margin-bottom: 1em !important;
 }
 
 
@@ -128,12 +226,23 @@ h4 {
   font-weight: $sansserifweight;
 }
 
+.citation {
+  height:100%;
+  padding: 1.25em;
+}
+
+.citation p:nth-child(odd) {
+  background:$lightcolor;
+}
+
 .citation p {
-  font-family:$serif;
+  font-family:$sansserif;
+  font-size:.8em;
+  margin-top: -1em;
 }
 
 .content p {
-  font-size:.8em;
+  font-size:1em;
   color:darkslategray;
 }
 
@@ -158,7 +267,6 @@ input {
   background: rgba(255,255,255,0.5);
   margin: 0 0 10px 0;
   font-size:1.5em;
-  font-weight:$sansserifweight;
   /*background:  url(../img/search_icon.png) no-repeat right;*/
   padding-left:40px;
   background-position: right 20px bottom 10px;
@@ -193,26 +301,48 @@ input {
   color:$maincolor;
 }
 
+/* =============== TFOOTER =============== */
+
+
 footer {
-  background-color:$footercolor;
-  height:250px;
+  background-color:$backgroundc;
+  height:auto;
   margin-top:3em;
   padding: 2em;
+  color:$maincolor;
+}
+
+
+footer img {
+  height:30px;
+  margin-bottom:1em;
 }
 
 footer p {
-  color:#f6f6f6;
   font-size:.6em;
   letter-spacing: .06em;
 }
 
 footer a {
-  color:#f6f6f6;
+  color:$maincolor;
 }
 
 footer a:hover {
-  color: #fdfdfd;
+  color: #fdfdfd;footer div:first-child, footer div:first-child + div {
+  list-style: none;
+  color:red;
+}
 
+
+}
+
+
+footer h1 {
+  font-size:1em;
+  color:$lightcolor;
+  letter-spacing:.05em;
+  height:30px;
+  margin-bottom:1em;
 }
 
 /* MENU */
