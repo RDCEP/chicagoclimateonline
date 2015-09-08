@@ -1,4 +1,5 @@
-/* line 11, ../scss/style.scss */
+/* =============== VARIABLES =============== */
+/* line 16, ../scss/style.scss */
 body {
   margin-top: 3em;
   background-color: #fcfcfc;
@@ -8,61 +9,8 @@ body {
   height: 100%;
 }
 
-/* =============== LINKS =============== */
-/* line 20, ../scss/style.scss */
-a {
-  color: #0F425C;
-}
-
-/* line 24, ../scss/style.scss */
-a:hover {
-  color: #3a435a;
-}
-
-/* line 28, ../scss/style.scss */
-nav a {
-  font-size: .9em;
-}
-
-/* line 32, ../scss/style.scss */
-.introsummary {
-  width: 70%;
-}
-
-/* =============== HEADER =============== */
-/* line 38, ../scss/style.scss */
-header {
-  width: 80%;
-  margin: 0 auto;
-  border-bottom: 1px solid #0F425C;
-  height: auto;
-  padding-left: 2em;
-  position: relative;
-  top: -50px;
-}
-
-/* line 49, ../scss/style.scss */
-header p {
-  max-width: 60%;
-  margin-top: -.8em;
-}
-
-/* line 55, ../scss/style.scss */
-header h1 {
-  color: #0F425C;
-  font-size: 2.5em;
-  letter-spacing: .5px;
-}
-
-/* line 61, ../scss/style.scss */
-#headersearch {
-  width: 200px;
-  position: absolute;
-  top: 70px;
-  right: 0px;
-}
-
-/* line 69, ../scss/style.scss */
+/* =============== TYPOGRAPHY =============== */
+/* line 27, ../scss/style.scss */
 h2 {
   font-family: "proxima-nova", sans-serif normal 300;
   font-weight: 100;
@@ -70,7 +18,7 @@ h2 {
   letter-spacing: .03em;
 }
 
-/* line 76, ../scss/style.scss */
+/* line 34, ../scss/style.scss */
 h3 {
   font-family: "proxima-nova", sans-serif normal 300;
   color: #0F425C;
@@ -84,52 +32,122 @@ h3 {
   letter-spacing: .09em;
 }
 
-/* line 91, ../scss/style.scss */
-header h2 {
-  font-size: 1.3em;
-  margin-top: -.5em;
+/* line 49, ../scss/style.scss */
+h4 {
+  font-family: "proxima-nova", sans-serif normal 300;
+  font-weight: 100;
 }
 
-/* =============== MENU =============== */
-/* line 106, ../scss/style.scss */
+/* =============== LINKS + MENU + NAV =============== */
+/* line 58, ../scss/style.scss */
+a {
+  color: #0F425C;
+}
+
+/* line 62, ../scss/style.scss */
+a:hover {
+  color: #3a435a;
+}
+
+/* line 66, ../scss/style.scss */
+nav a {
+  font-size: .9em;
+}
+
+/* line 70, ../scss/style.scss */
+.introsummary {
+  width: 70%;
+}
+
+/* line 74, ../scss/style.scss */
+nav ul li {
+  list-style-type: none;
+  margin-left: 1em;
+}
+
+/* line 81, ../scss/style.scss */
 nav ol li, nav ul li {
   line-height: 1.3em;
   margin-bottom: .4em;
 }
 
-/* line 111, ../scss/style.scss */
+/* line 86, ../scss/style.scss */
 nav ul li a {
   border-bottom: 0px solid #000;
   padding-bottom: 0px;
 }
 
+/* =============== HEADER =============== */
+/* line 94, ../scss/style.scss */
+header {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid #0F425C;
+  height: auto;
+  padding-left: 2em;
+  position: relative;
+  top: -50px;
+}
+
+/* line 105, ../scss/style.scss */
+header p {
+  max-width: 60%;
+  margin-top: -.8em;
+}
+
+/* line 111, ../scss/style.scss */
+header h1 {
+  color: #0F425C;
+  font-size: 2.5em;
+  letter-spacing: .5px;
+}
+
+/* line 117, ../scss/style.scss */
+#headersearch {
+  width: 200px;
+  position: absolute;
+  top: 70px;
+  right: 0px;
+}
+
+/* line 127, ../scss/style.scss */
+header h2 {
+  font-size: 1.3em;
+  margin-top: -.5em;
+}
+
 /* =============== HOME PAGE =============== */
-/* line 119, ../scss/style.scss */
+/* line 137, ../scss/style.scss */
 .homepage {
   position: relative;
   top: -40px;
 }
 
-/* line 125, ../scss/style.scss */
+/* line 143, ../scss/style.scss */
 ol li, ul li {
   line-height: 1.3em;
   margin-bottom: .7em;
 }
 
-/* line 131, ../scss/style.scss */
+/* line 149, ../scss/style.scss */
 ul li a:nth-child(2) {
   padding-bottom: 2.9px;
   color: #166188;
 }
 
 /* =============== TOPIC PAGE =============== */
-/* line 144, ../scss/style.scss */
+/* line 158, ../scss/style.scss */
 .topicoutline {
   font-size: .7em;
   color: gray;
 }
 
-/* line 149, ../scss/style.scss */
+/* line 163, ../scss/style.scss */
+#topics .accordion ul li {
+  font-size: .8em;
+}
+
+/* line 167, ../scss/style.scss */
 .topiclink,
 .topiclink:hover {
   display: inline-block;
@@ -142,7 +160,7 @@ ul li a:nth-child(2) {
   letter-spacing: .08em;
 }
 
-/* line 161, ../scss/style.scss */
+/* line 179, ../scss/style.scss */
 .breadcrumbs {
   border-style: none;
   border-bottom: solid 1px #0F425C;
@@ -156,93 +174,88 @@ ul li a:nth-child(2) {
   background-color: transparent;
 }
 
-/* line 174, ../scss/style.scss */
+/* line 192, ../scss/style.scss */
 .breadcrumbs li, .breadcrumbs a {
   letter-spacing: .1em;
   color: #0F425C;
+  margin: .4em;
 }
 
-/* line 181, ../scss/style.scss */
+/* line 199, ../scss/style.scss */
 .accordion .accordion-navigation, .accordion dd {
   margin-bottom: 1em !important;
 }
 
-/* =============== TOPIC OUTLINE =============== */
-/* line 191, ../scss/style.scss */
+/* line 205, ../scss/style.scss */
+.accordion-navigation > a:after {
+  content: "+";
+  padding-left: 5px;
+  float: right;
+  font-size: 20px;
+  color: #0F425C;
+}
+/* line 212, ../scss/style.scss */
+.accordion-navigation.active a:after {
+  content: "-";
+}
+
+/* line 218, ../scss/style.scss */
 lh {
   text-transform: uppercase;
-  background-color: #0F425C;
-  color: #f6f6f6;
+  font-size: .9em;
+  letter-spacing: 1px;
+  background-color: #dddddd;
+  color: #0F425C;
   width: 100%;
   padding: .3em .3em .3em 2em;
   margin: .4em;
   display: inline-block;
-  border-radius: .5em;
+  border-left: 1px solid black;
 }
 
-/* line 205, ../scss/style.scss */
-#searchpanel {
-  display: none;
-  width: 350px;
-  padding: 2em;
-  position: fixed;
-  z-index: 1000;
-  box-shadow: 0px 5px 2px #888888;
-  background-color: #fcfcfc;
-}
-
-/* line 215, ../scss/style.scss */
-#searchpanel a {
-  font-size: 1em;
-}
-
-/* line 219, ../scss/style.scss */
+/* line 232, ../scss/style.scss */
 header img:hover + #searchpanel {
   display: block;
 }
 
-/* line 224, ../scss/style.scss */
-h4 {
-  font-family: "proxima-nova", sans-serif normal 300;
-  font-weight: 100;
+/* line 237, ../scss/style.scss */
+ul li {
+  list-style-type: none;
+  margin-left: 3em;
 }
 
-/* line 229, ../scss/style.scss */
+/* =============== CITATION PAGE =============== */
+/* line 249, ../scss/style.scss */
 .citation {
   height: 100%;
   padding: 1.25em;
 }
 
-/* line 234, ../scss/style.scss */
+/* line 254, ../scss/style.scss */
 .citation p:nth-child(odd) {
-  background: #f6f6f6;
+  font-weight: bold;
 }
 
-/* line 238, ../scss/style.scss */
+/* line 258, ../scss/style.scss */
 .citation p {
   font-family: "proxima-nova", sans-serif normal 300;
   font-size: .8em;
   margin-top: -1em;
 }
 
-/* line 244, ../scss/style.scss */
+/* line 264, ../scss/style.scss */
 .content p {
-  font-size: 1em;
-  color: darkslategray;
+  font-size: .9em;
+  color: #686868;
 }
 
-/* line 250, ../scss/style.scss */
+/* line 270, ../scss/style.scss */
 .list {
   float: left;
 }
 
-/* line 254, ../scss/style.scss */
-ul li {
-  list-style-type: none;
-}
-
-/*SEARCH BAR */
-/* line 260, ../scss/style.scss */
+/* =============== SEARCH BAR =============== */
+/* line 277, ../scss/style.scss */
 input {
   background-color: gray;
   width: 80%;
@@ -256,7 +269,7 @@ input {
   background-position: right 20px bottom 10px;
 }
 
-/* line 275, ../scss/style.scss */
+/* line 292, ../scss/style.scss */
 .searchicon {
   position: absolute;
   float: left;
@@ -264,37 +277,53 @@ input {
   background-color: #576889;
 }
 
-/* line 282, ../scss/style.scss */
+/* line 299, ../scss/style.scss */
 #search {
   padding-left: 0px;
   float: left;
 }
 
-/* line 287, ../scss/style.scss */
+/* line 304, ../scss/style.scss */
 ::-webkit-input-placeholder {
-  color: #0F425C;
-  font-weight: 100;
+  color: #888888;
+  font-family: "proxima-nova", sans-serif normal 300;
 }
 
-/* line 292, ../scss/style.scss */
+/* line 309, ../scss/style.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: #0F425C;
 }
 
-/* line 296, ../scss/style.scss */
+/* line 313, ../scss/style.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #0F425C;
 }
 
-/* line 300, ../scss/style.scss */
+/* line 317, ../scss/style.scss */
 :-ms-input-placeholder {
   color: #0F425C;
 }
 
-/* =============== TFOOTER =============== */
-/* line 307, ../scss/style.scss */
+/* line 321, ../scss/style.scss */
+#searchpanel {
+  display: none;
+  width: 350px;
+  padding: 2em;
+  position: fixed;
+  z-index: 1000;
+  box-shadow: 0px 5px 2px #888888;
+  background-color: #fcfcfc;
+}
+
+/* line 331, ../scss/style.scss */
+#searchpanel a {
+  font-size: 1em;
+}
+
+/* =============== FOOTER =============== */
+/* line 338, ../scss/style.scss */
 footer {
   background-color: #fcfcfc;
   height: auto;
@@ -303,84 +332,38 @@ footer {
   color: #0F425C;
 }
 
-/* line 316, ../scss/style.scss */
+/* line 347, ../scss/style.scss */
 footer img {
   height: 30px;
   margin-bottom: 1em;
 }
 
-/* line 321, ../scss/style.scss */
+/* line 352, ../scss/style.scss */
 footer p {
   font-size: .6em;
   letter-spacing: .06em;
 }
 
-/* line 326, ../scss/style.scss */
+/* line 357, ../scss/style.scss */
 footer a {
   color: #0F425C;
 }
 
-/* line 330, ../scss/style.scss */
+/* line 361, ../scss/style.scss */
 footer a:hover {
   color: #fdfdfd;
 }
-/* line 331, ../scss/style.scss */
+/* line 362, ../scss/style.scss */
 footer a:hover footer div:first-child, footer a:hover footer div:first-child + div {
   list-style: none;
   color: red;
 }
 
-/* line 340, ../scss/style.scss */
+/* line 371, ../scss/style.scss */
 footer h1 {
-  font-size: 1em;
-  color: #f6f6f6;
+  font-size: .7em;
+  color: #0F425C;
   letter-spacing: .05em;
   height: 30px;
   margin-bottom: 1em;
-}
-
-/* MENU */
-/* Minimal css for clickable pure CSS collapsible tree menu */
-/* As specific as possible to prevent interference with other code */
-/* line 354, ../scss/style.scss */
-#menutree li {
-  list-style: none;
-  /* all list item li dots invisible */
-}
-
-/* line 358, ../scss/style.scss */
-li .menu_label + input[type=checkbox] {
-  opacity: 0;
-  /* checkboxes invisible and use no space */
-}
-
-/* display: none; is better but fails in ie8 */
-/* line 362, ../scss/style.scss */
-li .menu_label {
-  cursor: pointer;
-  /* cursor changes when you mouse over this class */
-}
-
-/* could add the many user-select: none; commands here */
-/* line 366, ../scss/style.scss */
-li .menu_label + input[type=checkbox] + ol > li {
-  display: none;
-  /* prevents sublists below unchecked labels from displaying */
-}
-
-/* line 371, ../scss/style.scss */
-li .menu_label + input[type=checkbox]:checked + ol > li {
-  display: block;
-  /* display submenu on click */
-}
-
-/* ================== ALTERNATE EXPANDING LIST ================== */
-/* line 383, ../scss/style.scss */
-.topiclist ul li:focus ~ .alert {
-  display: none;
-}
-
-/* line 386, ../scss/style.scss */
-.span2:focus ~ .alert {
-  display: block;
 }

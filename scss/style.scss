@@ -1,8 +1,13 @@
+/* =============== VARIABLES =============== */
+
+
 @import "../bourbon/_bourbon.scss";
 
 $backgroundc: #fcfcfc;
 $lightcolor: #f6f6f6;
-$maincolor: #0F425C;
+$midcolor: #dddddd;
+$maincolor:#0F425C;
+$darkcolor: #686868;
 $serif: "garamond-premier-pro",serif;
 $sansserif:"proxima-nova",sans-serif normal 300;
 $sansserifweight:100;
@@ -16,7 +21,40 @@ body {
   font-size:1.25em;
   height:100%;
 }
-/* =============== LINKS =============== */
+
+/* =============== TYPOGRAPHY =============== */
+
+h2 {
+  font-family:$sansserif;
+  font-weight: $sansserifweight;
+  color:$maincolor;
+  letter-spacing: .03em;
+}
+
+h3 {
+  font-family:$sansserif;
+  color:$maincolor;
+  font-size:.8em;
+  margin: 1em 0 0.5em 0;
+  font-weight: 200;
+  position: relative;
+  line-height: 40px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(53,86,129, 0.3);
+  letter-spacing: .09em;
+  ;
+}
+
+
+h4 {
+  font-family:$sansserif;
+  font-weight: $sansserifweight;
+}
+
+
+
+
+/* =============== LINKS + MENU + NAV =============== */
 a {
   color:$maincolor
 }
@@ -32,6 +70,24 @@ nav a {
 .introsummary {
   width:70%;
 }
+
+nav ul li {
+  list-style-type: none;
+  margin-left: 1em;
+
+}
+
+
+nav ol li, nav ul li {
+  line-height: 1.3em;
+  margin-bottom: .4em;
+}
+
+nav ul li a {
+  border-bottom: 0px solid #000;
+  padding-bottom: 0px
+}
+
 
 /* =============== HEADER =============== */
 
@@ -66,26 +122,6 @@ header h1 {
 
 }
 
-h2 {
-  font-family:$sansserif;
-  font-weight: $sansserifweight;
-  color:$maincolor;
-  letter-spacing: .03em;
-}
-
-h3 {
-  font-family:$sansserif;
-  color:$maincolor;
-  font-size:.8em;
-  margin: 1em 0 0.5em 0;
-  font-weight: 200;
-  position: relative;
-  line-height: 40px;
-  text-transform: uppercase;
-  border-bottom: 1px solid rgba(53,86,129, 0.3);
-  letter-spacing: .09em;
-  ;
-}
 
 
 header h2 {
@@ -94,24 +130,6 @@ header h2 {
 }
 
 
-
-/* =============== MENU =============== */
-
-
-nav {
-
-}
-
-
-nav ol li, nav ul li {
-  line-height: 1.3em;
-  margin-bottom: .4em;
-}
-
-nav ul li a {
-  border-bottom: 0px solid #000;
-  padding-bottom: 0px
-}
 
 
 /* =============== HOME PAGE =============== */
@@ -134,16 +152,16 @@ ul li a:nth-child(2) {
 
 }
 
-
-
-
-
 /* =============== TOPIC PAGE =============== */
 
 
 .topicoutline {
   font-size:.7em;
   color:gray;
+}
+
+#topics .accordion ul li {
+  font-size:.8em;
 }
 
 .topiclink,
@@ -174,7 +192,7 @@ ul li a:nth-child(2) {
 .breadcrumbs li, .breadcrumbs a {
   letter-spacing: .1em;
   color:$maincolor;
-
+  margin:.4em;
 }
 
 
@@ -183,48 +201,50 @@ ul li a:nth-child(2) {
 }
 
 
-/* =============== TOPIC OUTLINE =============== */
-
-
+.accordion-navigation {
+  >a:after {
+    content: "+";
+    padding-left: 5px;
+    float: right;
+    font-size: 20px;
+    color:$maincolor;
+  }
+  &.active a:after {
+    content: "-";
+  }
+}
 
 
 lh {
   text-transform: uppercase;
-  background-color: $maincolor;
-  color:$lightcolor;
+  font-size:.9em;
+  letter-spacing: 1px;
+  background-color: $midcolor;
+  color: $maincolor;
   width:100%;
   padding: .3em .3em .3em 2em;
   margin: .4em;
   display:inline-block;
-  border-radius: .5em;
-
+  border-left: 1px solid black;
 }
 
-
-
-#searchpanel {
-  display: none;
-  width:350px;
-  padding:2em;
-  position:fixed;
-  z-index:1000;
-  box-shadow: 0px 5px 2px #888888;
-  background-color: $backgroundc;
-}
-
-#searchpanel a {
-  font-size:1em;
-}
 
 header img:hover + #searchpanel {
   display: block;
 }
 
 
-h4 {
-  font-family:$sansserif;
-  font-weight: $sansserifweight;
+ul li {
+  list-style-type:none;
+  margin-left:3em;
+
 }
+
+
+
+/* =============== CITATION PAGE =============== */
+
+
 
 .citation {
   height:100%;
@@ -232,7 +252,7 @@ h4 {
 }
 
 .citation p:nth-child(odd) {
-  background:$lightcolor;
+  font-weight: bold;
 }
 
 .citation p {
@@ -242,8 +262,8 @@ h4 {
 }
 
 .content p {
-  font-size:1em;
-  color:darkslategray;
+  font-size:.9em;
+  color:$darkcolor;
 }
 
 
@@ -251,11 +271,8 @@ h4 {
   float:left;
 }
 
-ul li {
-  list-style-type:none
-}
 
-/*SEARCH BAR */
+/* =============== SEARCH BAR =============== */
 
 input {
   background-color: gray;
@@ -285,8 +302,8 @@ input {
 }
 
 ::-webkit-input-placeholder {
-  color:$maincolor;
-  font-weight:$sansserifweight;
+  color: #888888;
+  font-family:$sansserif;
 }
 
 :-moz-placeholder { /* Firefox 18- */
@@ -301,7 +318,21 @@ input {
   color:$maincolor;
 }
 
-/* =============== TFOOTER =============== */
+#searchpanel {
+  display: none;
+  width:350px;
+  padding:2em;
+  position:fixed;
+  z-index:1000;
+  box-shadow: 0px 5px 2px #888888;
+  background-color: $backgroundc;
+}
+
+#searchpanel a {
+  font-size:1em;
+}
+
+/* =============== FOOTER =============== */
 
 
 footer {
@@ -338,51 +369,10 @@ footer a:hover {
 
 
 footer h1 {
-  font-size:1em;
-  color:$lightcolor;
+  font-size:.7em;
+  color:$maincolor;
   letter-spacing:.05em;
   height:30px;
   margin-bottom:1em;
 }
 
-/* MENU */
-/* Minimal css for clickable pure CSS collapsible tree menu */
-/* As specific as possible to prevent interference with other code */
-
-
-
-#menutree li {
-  list-style: none;          /* all list item li dots invisible */
-}
-
-li .menu_label + input[type=checkbox] {
-  opacity: 0;             /* checkboxes invisible and use no space */
-}                        /* display: none; is better but fails in ie8 */
-
-li .menu_label {
-  cursor: pointer;        /* cursor changes when you mouse over this class */
-}                         /* could add the many user-select: none; commands here */
-
-li .menu_label + input[type=checkbox] + ol > li
-{
-  display: none;         /* prevents sublists below unchecked labels from displaying */
-}
-
-li .menu_label + input[type=checkbox]:checked + ol > li
-{
-  display: block;         /* display submenu on click */
-}
-/* ================== ALTERNATE EXPANDING LIST ================== */
-
-.topiclist ul {
-
-
-}
-
-
-.topiclist ul li:focus ~ .alert {
-  display: none;
-}
-.span2:focus ~ .alert {
-  display: block;
-}

@@ -14,7 +14,7 @@
 
   </head>
   <body>
-  <header>
+  <header class="row">
       <a href="index.html"><h1>Chicago Climate Online</h1></a>
       <p>The focus of C2O is on policy issues, not climate science. Science continues to develop rapidly, we take the core of existing climate science as given.</p>
       <div id="headersearch">
@@ -32,10 +32,10 @@
                             <a href="about.html">About</a>
                         </li>
                         <li>
-                            <a href="topics.html">Web Resources</a>
+                            <a href="#">Web Resources</a>
                         </li>
                         <li>
-                            <a href="#">Topic Page</a>
+                            <a href="topics.html">Topic Page</a>
                         </li>
                         <li>
                             <a href="#">Contact</a>
@@ -46,7 +46,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="large-10 medium-10 columns">
+            <div class="large-10 medium-10 columns" id="topics">
               <ul class="breadcrumbs">
                   <li><a href="index.html">Home</a></li>
                   <li class="current">Topic Outline</li>
@@ -55,7 +55,7 @@
                 <p class="topicoutline">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vulputate, nunc nec molestie scelerisque, est tellus volutpat odio, nec dictum lectus mauris eget justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis pharetra est a sem maximus congue. Aenean at lacus convallis, facilisis purus a, bibendum sem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam auctor pharetra sem, sit amet aliquet diam sagittis in. Proin eget orci tortor. Ut tellus quam, elementum a purus nec, bibendum ornare nunc. Quisque consectetur elit at dignissim rhoncus. Quisque sit amet mi justo. Etiam condimentum, magna at dictum facilisis, orci sapien dignissim risus, dignissim porttitor libero diam et ligula. Nulla condimentum vel velit quis venenatis. Vestibulum rutrum iaculis tortor, sit amet blandit arcu porttitor sit amet.
                 </p>
-                <a class="topiclink" href="topicoutline.html">View Topic Outline</a>
+                <a class="topiclink" href="alltopics.html">View Topic Outline</a>
                 <ul class="accordion" data-accordion>
                     <li class="accordion-navigation">
                         <a href="#panel1a">Economic Instruments</a>
@@ -68,62 +68,86 @@
 
                                 In this section, there is a separate subsection containing references and descriptions of important topics and considerations for each of these instruments. This section also contains a more general discussion of leakage, interactions between instruments, instrument choice, and political concerns regarding economic instruments.
                             </p>
-                            <ol id="menutree">
-                                <li>
-
-                                    <label class="menu_label" for="c1">Taxes</label>
-                                    <input type="checkbox" id="c1" />                             <!-- input must follow label for safari -->
-                                    <ol>
-                                        <li>
-                                            <label for="c2" class="menu_label">General Tax Theory</label>
-                                            <input type="checkbox" id="c2" />
-                                            <ol>
-                                                <li class="page"><a href="#">Classic Work</a></li>
-                                                <li class="page"><a href="#">Survey Articles</a></li>
-                                            </ol>
-                                        </li>
-                                        <li>
-                                            <label for="c3" class="menu_label">Tradeable Permits</label>
-                                            <input type="checkbox" id="c3" />
-                                            <ol>
-                                                <li class="page"><a href="#">Design Consideration</a></li>
-
-                                                <li>
-                                                    <label for="c4" class="menu_label">Menu Am2b1 </label>
-                                                    <input type="checkbox" id="c4" />
-                                                    <ol>
-                                                        <li class="page"><a href="#">Page Ap2b1</a></li>
-                                                    </ol></li>
-                                            </ol></li>
-                                    </ol></li>
-
-                                <li>
-                                    <label class="menu_label" for="c5">Menu Bm0a1</label>
-                                    <input type="checkbox" id="c5" />
-                                    <ol>
-                                        <li>
-                                            <label for="c6" class="menu_label">Menu Bm1a1</label>
-                                            <input type="checkbox" id="c6" />
-                                            <ol>
-                                                <li class="page"><a href="#">Page Bp1a1</a></li>
-                                            </ol>
-                                        </li>
-                                        <li>
-                                            <label for="c7" class="menu_label">Menu Bm1b1</label>
-                                            <input type="checkbox" id="c7" />
-                                            <ol>
-                                                <li class="page"><a href="#">Page Bp1b1</a></li>
-                                                <li>
-                                                    <label for="c8" class="menu_label">Menu Bm2b1</label>
-                                                    <input type="checkbox" id="c8" />
-                                                    <ol>
-                                                        <li class="page"><a href="#">Page Bp2b1</a></li>
-                                                    </ol></li>
-                                            </ol></li>
-                                    </ol></li>
-
-                            </ol>
+                            <ul>
+                                <lh>Taxes</lh>
+                                <ul>
+                                    <lh>General Tax Theory</lh>
+                                    <ul>
+                                        <lh>Classic Works</lh>
+                                        <li> <a href="citation_book.html">The Problem of Social Cost</a> </li>
+                                        <li>The Economics of Welfare</li>
+                                        <li>The Theory of Environmental Policy</li>
+                                    </ul>
+                                    <ul>
+                                        <lh>Survey Articles</lh>
+                                        <li>Carbon-tax-broader-us-fiscal-reform.pdf</li>
+                                        <li>Carbon_Taxes-A_Review_of_Experience_and_Policy_Design_Considerations.pdf</li>
+                                        <li>Chapter 23 Environmental taxation and regulation</li>
+                                        <li>Environmental_Taxation_A_Guide_for_Policy_Makers.pdf</li>
+                                    </ul>
+                                </ul>
+                            </ul>
+                            <ul>
+                                <ul>
+                                    <lh>Distributional Impacts</lh>
+                                    <li>Distributional impacts of carbon pricing: A general equilibrium approach with micro-data for households</li>
+                                    <li>Energy and carbon taxes and their distributional implications</li>
+                                    <li>Mitigating the Distributional Impacts of Climate Change Policy</li>
+                                    <li>Reducing the impact of 'green' taxes and charges on low-income households | Joseph Rowntree Foundation</li>
+                                    <li>The economics of US greenhouse gas emissions reduction policy : assessing distributional effects across households and the 50 United States using a recursive dynamic computable general equilibrium (CGE) model</li>
+                                    <li>Who_Pays_for_Climate_Regulation_Kolstad.pdf</li>
+                                </ul>
+                            </ul>
+                            <ul>
+                                <lh>Tax Revenue Use</lh>
+                                <ul>
+                                    <lh>Double Dividend Hypothesis</lh>
+                                    <li>Double dividend effectiveness of energy tax policies and the elasticity of substitution: A CGE appraisal</li>
+                                    <li>Environmental Levies and Distortionary Taxation</li>
+                                    <li>Environmental tax reform: does it work? A survey of the empirical evidence</li>
+                                    <li>Environmental taxation and the double dividend: A reader's guide</li>
+                                    <li>Environmental Taxes, International Capital Mobility and Inefficient Tax Systems: Tax Burden vs. Tax Shifting</li>
+                                    <li>Environmental_Taxes_and_The_Double_Dividend_Hypothesis_Fullerton_Metcalf_1997.pdf</li>
+                                    <li>Green Tax Reforms and the Double Dividend: an Updated Reader's Guide</li>
+                                    <li>Handbook of Research on Environmental Taxation</li>
+                                    <li>Tax Deductions, Environmental Policy, and the “Double Dividend” Hypothesis</li>
+                                    <li>The Death of the Pigovian Tax: Comment</li>
+                                    <li>The Double Dividend Hypothesis of Environmental Taxes: A Survey</li>
+                                </ul>
+                                <ul>
+                                    <lh>Tax Shifting</lh>
+                                    <li>Carbon-Energy Taxation: Lessons from Europe</li>
+                                </ul>
+                            </ul>
+                            <ul>
+                                <lh>Design Considerations</lh>
+                                <li>A Note on Emissions Taxes and Incomplete Information</li>
+                                <li>A Tax-Based Approach to Slowing Global Climate Change</li>
+                                <li>Border tax adjustment: a feasible way to support stringent emission tradingCarbon leakages: a general equilibrium</li>
+                                <li>Carbon leakages: a general equilibrium view</li>
+                                <li>Climate change policy, market structure, and carbon leakage</li>
+                                <li>Design of a Carbon Tax, The</li>
+                                <li>Developing a Social Cost of Carbon for US Regulatory Analysis: A Methodology and Interpretation</li>
+                                <li>Environmental Taxation in Open Economies: Unilateralism or Partial Harmonization</li>
+                                <li>Handbook of Research on Environmental Taxation</li>
+                                <li>Environmental taxation, tax competition, and harmonization</li>
+                                <li>Issues in Designing U.S. Climate Change Policy</li>
+                                <li>leveling_the_carbon_playing_field.pdf</li>
+                                <li>Monitoring and Enforcement of Environmental Policy</li>
+                                <li>Optimal enforcement policy and firms’ emissions and compliance with environmental taxes</li>
+                                <li>Options and Considerations for a Federal Carbon Tax | Center for Climate and Energy Solutions</li>
+                                <li>Pollution tax design and `Green' national accounting</li>
+                                <li>Tax Policy Issues in Designing a Carbon Tax</li>
+                                <li>Taxation of Emissions of Greenhouse Gases</li>
+                                <li>The Choice between Emission Taxes and Output Taxes under Imperfect Monitoring</li>
+                                <li>The design of tax structure: Direct versus indirect taxation</li>
+                                <li>The Effectiveness of Environmental Monitoring and Enforcement: A Review of the Empirical Evidence</li>
+                                <li>The Scale and Scope of Environmental Taxation</li>
+                                <li>Trade and Carbon Taxes</li>
+                                <li>Upstream and downstream pollution taxations in vertically related markets with imperfect competition</li>
+                            </ul>
                         </div>
+
                     </li>
                     <li class="accordion-navigation">
                         <a href="#panel2a">International Agreements</a>
@@ -147,6 +171,7 @@
                                 However two main factors act to limit to effectiveness of these agreements: strategic context of the game and lack of institutions with well defined and effective enforcement powers. The first gives way to the incentive to free-rise and the second prevents IEAs from being binding and imposing the costs on the free-riders.
                             </p>
                         </div>
+
                     </li>
                     <li class="accordion-navigation">
                         <a href="#panel3a">Mitigation Potential Technologies & Instruments </a>
