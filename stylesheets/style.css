@@ -38,47 +38,52 @@ h4 {
   font-weight: 100;
 }
 
+/* line 54, ../scss/style.scss */
+ul li {
+  list-style-type: none;
+}
+
 /* =============== LINKS + MENU + NAV =============== */
-/* line 58, ../scss/style.scss */
+/* line 61, ../scss/style.scss */
 a {
   color: #0F425C;
 }
 
-/* line 62, ../scss/style.scss */
+/* line 65, ../scss/style.scss */
 a:hover {
   color: #3a435a;
 }
 
-/* line 66, ../scss/style.scss */
+/* line 69, ../scss/style.scss */
 nav a {
   font-size: .9em;
 }
 
-/* line 70, ../scss/style.scss */
+/* line 73, ../scss/style.scss */
 .introsummary {
   width: 70%;
 }
 
-/* line 74, ../scss/style.scss */
+/* line 77, ../scss/style.scss */
 nav ul li {
   list-style-type: none;
   margin-left: 1em;
 }
 
-/* line 81, ../scss/style.scss */
+/* line 84, ../scss/style.scss */
 nav ol li, nav ul li {
   line-height: 1.3em;
   margin-bottom: .4em;
 }
 
-/* line 86, ../scss/style.scss */
+/* line 89, ../scss/style.scss */
 nav ul li a {
   border-bottom: 0px solid #000;
   padding-bottom: 0px;
 }
 
 /* =============== HEADER =============== */
-/* line 94, ../scss/style.scss */
+/* line 97, ../scss/style.scss */
 header {
   width: 80%;
   margin: 0 auto;
@@ -89,20 +94,21 @@ header {
   top: -50px;
 }
 
-/* line 105, ../scss/style.scss */
+/* line 108, ../scss/style.scss */
 header p {
   max-width: 60%;
   margin-top: -.8em;
+  color: #777777;
 }
 
-/* line 111, ../scss/style.scss */
+/* line 115, ../scss/style.scss */
 header h1 {
   color: #0F425C;
   font-size: 2.5em;
   letter-spacing: .5px;
 }
 
-/* line 117, ../scss/style.scss */
+/* line 121, ../scss/style.scss */
 #headersearch {
   width: 200px;
   position: absolute;
@@ -110,44 +116,49 @@ header h1 {
   right: 0px;
 }
 
-/* line 127, ../scss/style.scss */
+/* line 131, ../scss/style.scss */
 header h2 {
   font-size: 1.3em;
   margin-top: -.5em;
 }
 
 /* =============== HOME PAGE =============== */
-/* line 137, ../scss/style.scss */
+/* line 141, ../scss/style.scss */
 .homepage {
   position: relative;
-  top: -40px;
+  top: -30px;
 }
 
-/* line 143, ../scss/style.scss */
+/* line 146, ../scss/style.scss */
+.homeparagraph {
+  width: 70%;
+}
+
+/* line 150, ../scss/style.scss */
 ol li, ul li {
   line-height: 1.3em;
   margin-bottom: .7em;
 }
 
-/* line 149, ../scss/style.scss */
+/* line 156, ../scss/style.scss */
 ul li a:nth-child(2) {
   padding-bottom: 2.9px;
   color: #166188;
 }
 
 /* =============== TOPIC PAGE =============== */
-/* line 158, ../scss/style.scss */
+/* line 165, ../scss/style.scss */
 .topicoutline {
   font-size: .7em;
   color: gray;
 }
 
-/* line 163, ../scss/style.scss */
+/* line 170, ../scss/style.scss */
 #topics .accordion ul li {
   font-size: .8em;
 }
 
-/* line 167, ../scss/style.scss */
+/* line 174, ../scss/style.scss */
 .topiclink,
 .topiclink:hover {
   display: inline-block;
@@ -160,7 +171,7 @@ ul li a:nth-child(2) {
   letter-spacing: .08em;
 }
 
-/* line 179, ../scss/style.scss */
+/* line 186, ../scss/style.scss */
 .breadcrumbs {
   border-style: none;
   border-bottom: solid 1px #0F425C;
@@ -174,19 +185,19 @@ ul li a:nth-child(2) {
   background-color: transparent;
 }
 
-/* line 192, ../scss/style.scss */
+/* line 199, ../scss/style.scss */
 .breadcrumbs li, .breadcrumbs a {
   letter-spacing: .1em;
   color: #0F425C;
   margin: .4em;
 }
 
-/* line 199, ../scss/style.scss */
+/* line 206, ../scss/style.scss */
 .accordion .accordion-navigation, .accordion dd {
   margin-bottom: 1em !important;
 }
 
-/* line 205, ../scss/style.scss */
+/* line 212, ../scss/style.scss */
 .accordion-navigation > a:after {
   content: "+";
   padding-left: 5px;
@@ -194,12 +205,12 @@ ul li a:nth-child(2) {
   font-size: 20px;
   color: #0F425C;
 }
-/* line 212, ../scss/style.scss */
+/* line 219, ../scss/style.scss */
 .accordion-navigation.active a:after {
   content: "-";
 }
 
-/* line 218, ../scss/style.scss */
+/* line 225, ../scss/style.scss */
 lh {
   text-transform: uppercase;
   font-size: .9em;
@@ -213,49 +224,49 @@ lh {
   border-left: 1px solid black;
 }
 
-/* line 232, ../scss/style.scss */
+/* line 239, ../scss/style.scss */
 header img:hover + #searchpanel {
   display: block;
 }
 
-/* line 237, ../scss/style.scss */
-ul li {
+/* line 244, ../scss/style.scss */
+#topics ul li {
   list-style-type: none;
   margin-left: 3em;
 }
 
 /* =============== CITATION PAGE =============== */
-/* line 249, ../scss/style.scss */
+/* line 256, ../scss/style.scss */
 .citation {
   height: 100%;
   padding: 1.25em;
 }
 
-/* line 254, ../scss/style.scss */
+/* line 261, ../scss/style.scss */
 .citation p:nth-child(odd) {
   font-weight: bold;
 }
 
-/* line 258, ../scss/style.scss */
+/* line 265, ../scss/style.scss */
 .citation p {
   font-family: "proxima-nova", sans-serif normal 300;
   font-size: .8em;
   margin-top: -1em;
 }
 
-/* line 264, ../scss/style.scss */
+/* line 271, ../scss/style.scss */
 .content p {
   font-size: .9em;
   color: #686868;
 }
 
-/* line 270, ../scss/style.scss */
+/* line 277, ../scss/style.scss */
 .list {
   float: left;
 }
 
 /* =============== SEARCH BAR =============== */
-/* line 277, ../scss/style.scss */
+/* line 284, ../scss/style.scss */
 input {
   background-color: gray;
   width: 80%;
@@ -269,7 +280,7 @@ input {
   background-position: right 20px bottom 10px;
 }
 
-/* line 292, ../scss/style.scss */
+/* line 299, ../scss/style.scss */
 .searchicon {
   position: absolute;
   float: left;
@@ -277,36 +288,36 @@ input {
   background-color: #576889;
 }
 
-/* line 299, ../scss/style.scss */
+/* line 306, ../scss/style.scss */
 #search {
   padding-left: 0px;
   float: left;
 }
 
-/* line 304, ../scss/style.scss */
+/* line 311, ../scss/style.scss */
 ::-webkit-input-placeholder {
   color: #888888;
   font-family: "proxima-nova", sans-serif normal 300;
 }
 
-/* line 309, ../scss/style.scss */
+/* line 316, ../scss/style.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: #0F425C;
 }
 
-/* line 313, ../scss/style.scss */
+/* line 320, ../scss/style.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #0F425C;
 }
 
-/* line 317, ../scss/style.scss */
+/* line 324, ../scss/style.scss */
 :-ms-input-placeholder {
   color: #0F425C;
 }
 
-/* line 321, ../scss/style.scss */
+/* line 328, ../scss/style.scss */
 #searchpanel {
   display: none;
   width: 350px;
@@ -317,13 +328,13 @@ input {
   background-color: #fcfcfc;
 }
 
-/* line 331, ../scss/style.scss */
+/* line 338, ../scss/style.scss */
 #searchpanel a {
   font-size: 1em;
 }
 
 /* =============== FOOTER =============== */
-/* line 338, ../scss/style.scss */
+/* line 345, ../scss/style.scss */
 footer {
   background-color: #fcfcfc;
   height: auto;
@@ -332,34 +343,34 @@ footer {
   color: #0F425C;
 }
 
-/* line 347, ../scss/style.scss */
+/* line 354, ../scss/style.scss */
 footer img {
   height: 30px;
   margin-bottom: 1em;
 }
 
-/* line 352, ../scss/style.scss */
+/* line 359, ../scss/style.scss */
 footer p {
   font-size: .6em;
   letter-spacing: .06em;
 }
 
-/* line 357, ../scss/style.scss */
+/* line 364, ../scss/style.scss */
 footer a {
   color: #0F425C;
 }
 
-/* line 361, ../scss/style.scss */
+/* line 368, ../scss/style.scss */
 footer a:hover {
   color: #fdfdfd;
 }
-/* line 362, ../scss/style.scss */
+/* line 369, ../scss/style.scss */
 footer a:hover footer div:first-child, footer a:hover footer div:first-child + div {
   list-style: none;
   color: red;
 }
 
-/* line 371, ../scss/style.scss */
+/* line 378, ../scss/style.scss */
 footer h1 {
   font-size: .7em;
   color: #0F425C;
