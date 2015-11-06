@@ -319,21 +319,24 @@ input:-moz-placeholder {
   padding: 0.5625rem 0.875rem 0.5625rem;
   border-radius: 0px;
   background-color: transparent;
+  padding: 0 !important;
+  padding-bottom: 1em !important;
+  /* =============== HOW CAN I OVERRIDE APP.CSS IN ANOTHER? SHOULD APP.JS BE MOVED CLOSER TO THE <HEAD> ? =============== */
 }
 
-/* line 341, ../scss/style.scss */
+/* line 347, ../scss/style.scss */
 .breadcrumbs li, .breadcrumbs a {
   letter-spacing: .1em;
   color: #576889;
-  margin: .4em;
+  margin: .4 .4em 0 0;
 }
 
-/* line 348, ../scss/style.scss */
+/* line 354, ../scss/style.scss */
 .accordion .accordion-navigation, .accordion dd {
   margin-bottom: 1em !important;
 }
 
-/* line 354, ../scss/style.scss */
+/* line 360, ../scss/style.scss */
 .accordion-navigation > a:after {
   content: "+";
   padding-left: 5px;
@@ -341,12 +344,12 @@ input:-moz-placeholder {
   font-size: 20px;
   color: #576889;
 }
-/* line 361, ../scss/style.scss */
+/* line 367, ../scss/style.scss */
 .accordion-navigation.active a:after {
   content: "-";
 }
 
-/* line 367, ../scss/style.scss */
+/* line 373, ../scss/style.scss */
 lh {
   text-transform: uppercase;
   font-size: .9em;
@@ -360,49 +363,49 @@ lh {
   border-left: 1px solid black;
 }
 
-/* line 381, ../scss/style.scss */
+/* line 387, ../scss/style.scss */
 header img:hover + #searchpanel {
   display: block;
 }
 
-/* line 386, ../scss/style.scss */
+/* line 392, ../scss/style.scss */
 #topics ul li {
   list-style-type: none;
-  margin-left: 3em;
+  margin-left: 0em;
 }
 
 /* =============== CITATION PAGE =============== */
-/* line 398, ../scss/style.scss */
+/* line 404, ../scss/style.scss */
 .citation {
   height: 100%;
   padding: 1.25em;
 }
 
-/* line 403, ../scss/style.scss */
+/* line 409, ../scss/style.scss */
 .citation p:nth-child(odd) {
   font-weight: bold;
 }
 
-/* line 407, ../scss/style.scss */
+/* line 413, ../scss/style.scss */
 .citation p {
   font-family: "proxima-nova", sans-serif normal 300;
   font-size: .8em;
   margin-top: -1em;
 }
 
-/* line 413, ../scss/style.scss */
+/* line 419, ../scss/style.scss */
 .content p {
   font-size: .9em;
   color: #686868;
 }
 
-/* line 419, ../scss/style.scss */
+/* line 425, ../scss/style.scss */
 .list {
   float: left;
 }
 
 /* =============== SEARCH BAR =============== */
-/* line 426, ../scss/style.scss */
+/* line 432, ../scss/style.scss */
 input {
   background-color: gray;
   width: 80%;
@@ -416,7 +419,7 @@ input {
   background-position: right 20px bottom 10px;
 }
 
-/* line 441, ../scss/style.scss */
+/* line 447, ../scss/style.scss */
 .searchicon {
   position: absolute;
   float: left;
@@ -424,36 +427,36 @@ input {
   background-color: #576889;
 }
 
-/* line 448, ../scss/style.scss */
+/* line 454, ../scss/style.scss */
 #search {
   padding-left: 0px;
   float: left;
 }
 
-/* line 453, ../scss/style.scss */
+/* line 459, ../scss/style.scss */
 ::-webkit-input-placeholder {
   color: #888888;
   font-family: "proxima-nova", sans-serif normal 300;
 }
 
-/* line 458, ../scss/style.scss */
+/* line 464, ../scss/style.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: #576889;
 }
 
-/* line 462, ../scss/style.scss */
+/* line 468, ../scss/style.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #576889;
 }
 
-/* line 466, ../scss/style.scss */
+/* line 472, ../scss/style.scss */
 :-ms-input-placeholder {
   color: #576889;
 }
 
-/* line 470, ../scss/style.scss */
+/* line 476, ../scss/style.scss */
 #searchpanel {
   display: none;
   width: 350px;
@@ -464,13 +467,13 @@ input {
   background-color: #fcfcfc;
 }
 
-/* line 480, ../scss/style.scss */
+/* line 486, ../scss/style.scss */
 #searchpanel a {
   font-size: 1em;
 }
 
 /* =============== FOOTER =============== */
-/* line 487, ../scss/style.scss */
+/* line 493, ../scss/style.scss */
 footer {
   clear: both;
   height: auto;
@@ -480,13 +483,13 @@ footer {
   padding-bottom: 2em;
 }
 
-/* line 498, ../scss/style.scss */
+/* line 504, ../scss/style.scss */
 footer img {
   height: 30px;
   margin-bottom: 1em;
 }
 
-/* line 503, ../scss/style.scss */
+/* line 509, ../scss/style.scss */
 footer p {
   font-size: .6em;
   letter-spacing: .06em;
@@ -494,22 +497,22 @@ footer p {
   text-align: left;
 }
 
-/* line 510, ../scss/style.scss */
+/* line 516, ../scss/style.scss */
 footer a {
   color: #576889;
 }
 
-/* line 514, ../scss/style.scss */
+/* line 520, ../scss/style.scss */
 footer a:hover {
   color: #fdfdfd;
 }
-/* line 515, ../scss/style.scss */
+/* line 521, ../scss/style.scss */
 footer a:hover footer div:first-child, footer a:hover footer div:first-child + div {
   list-style: none;
   color: red;
 }
 
-/* line 524, ../scss/style.scss */
+/* line 530, ../scss/style.scss */
 footer h1 {
   font-size: .7em;
   color: #576889;

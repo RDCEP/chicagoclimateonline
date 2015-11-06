@@ -336,12 +336,18 @@ input:-moz-placeholder {
   padding: 0.5625rem 0.875rem 0.5625rem;
   border-radius: 0px;
   background-color: transparent;
+  padding: 0 !important;
+  padding-bottom:1em !important;
+  /* =============== HOW CAN I OVERRIDE APP.CSS IN ANOTHER? SHOULD APP.JS BE MOVED CLOSER TO THE <HEAD> ? =============== */
+
+
+
 }
 
 .breadcrumbs li, .breadcrumbs a {
   letter-spacing: .1em;
   color:$maincolor;
-  margin:.4em;
+  margin:.4 .4em 0 0;
 }
 
 
@@ -385,7 +391,7 @@ header img:hover + #searchpanel {
 
 #topics ul li {
   list-style-type:none;
-  margin-left:3em;
+  margin-left:0em;
 
 }
 
